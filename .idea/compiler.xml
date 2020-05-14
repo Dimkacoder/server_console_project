@@ -13,7 +13,7 @@
     <bytecodeTargetLevel>
       <module name="client" target="11" />
       <module name="server" target="11" />
-      <module name="server_console_project" target="1.5" />
+      <module name="server_console_project" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
