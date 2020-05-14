@@ -20,6 +20,9 @@ public class Console {
     }
 
     public void writeCommand() throws IOException, ClassNotFoundException {
+        if(sc.equals(System.in)){
+            ExecuteScript.AllScripts.clear();
+        }
         System.out.println("Введите команду: ");
 
         String command = sc.nextLine();
