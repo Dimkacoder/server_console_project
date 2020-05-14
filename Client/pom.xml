@@ -1,62 +1,52 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>a1s</groupId>
-    <artifactId>client</artifactId>
-    <version>1.0</version>
-    <packaging>jar</packaging>
-    <name>client</name>
-
     <parent>
-        <groupId>a1s</groupId>
-        <artifactId>server_console_project</artifactId>
-        <version>1.0</version>
-        <relativePath>../pom.xml</relativePath>
+        <artifactId>core</artifactId>
+        <groupId>OOP</groupId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
-    <dependencies>
-        <dependency>
-            <groupId>a1s</groupId>
-            <artifactId>server</artifactId>
-            <version>1.0</version>
-        </dependency>
-    </dependencies>
+    <artifactId>client</artifactId>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
                 <configuration>
-                    <archive>
-                        <addMavenDescriptor>false</addMavenDescriptor>
-                        <compress>true</compress>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>libs/</classpathPrefix>
-                            <mainClass>a1s.client.App</mainClass>
-                        </manifest>
-                    </archive>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
-                <version>2.4</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
+                <artifactId>maven-assembly-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>copy-dependencies</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>copy-dependencies</goal>
+                            <goal>single</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.directory}/libs</outputDirectory>
+                            <archive>
+                                <manifest>
+                                    <mainClass>
+                                        MainClient
+                                    </mainClass>
+                                </manifest>
+                            </archive>
+                            <descriptorRefs>
+                                <descriptorRef>jar-with-dependencies</descriptorRef>
+                            </descriptorRefs>
                         </configuration>
                     </execution>
                 </executions>
-                <version>2.5.1</version>
             </plugin>
         </plugins>
     </build>
+
 </project>
