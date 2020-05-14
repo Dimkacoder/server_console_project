@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JarClient">
+    <output-path>$PROJECT_DIR$/out/artifacts/JarClient</output-path>
+    <root id="archive" name="Client.jar">
+      <element id="module-output" name="Client" />
+      <element id="module-output" name="Lab6" />
+      <element id="module-output" name="Server" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/json-simple-1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

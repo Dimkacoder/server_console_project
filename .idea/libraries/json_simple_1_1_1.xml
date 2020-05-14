@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="json-simple-1.1.1">
+    <ANNOTATIONS>
+      <root url="file://$USER_HOME$/Downloads/json-simple-1.1.1.jar" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/json-simple-1.1.1.jar" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Downloads/json-simple-1.1.1.jar" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$USER_HOME$/Downloads/json-simple-1.1.1.jar" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/json-simple-1.1.1.jar" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Downloads/json-simple-1.1.1.jar" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/json-simple-1.1.1.jar" recursive="false" type="SOURCES" />
+  </library>
+</component>
